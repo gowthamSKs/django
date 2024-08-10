@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    
+    th,td{
+        border: 1px solid black;
+    }
+    table{
+        margin:2%;
+        width:99%;
+    }
+    h1{
+        text-transform: uppercase;
+        background-color:rgb(19, 19, 69);
+        color: whitesmoke;
+        margin-top: 0.25%;
+        font-size: 30px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px black;
+        text-align: center;
+    }
+    .container{
+        height: 100vh;
+        width:100%;
+    }
+    .left{
+        float:left;
+        width: 49%;
+    }
+    .right{
+        float:right ;
+        width: 49%;
+    }
+    h2{
+        margin-top: 0.25%;
+        background-color: red;
+        color: whitesmoke;
+        font-size: 30px;
+        text-align: center;
+    }
+    th{
+     background-color: rgb(241, 210, 155);
+    }
+ 
+
+
+</style>
+<h2>Technical and Non-Technical events are mentioned below</h2>
+<div class="container">
+    <div class="left">
+<h1>10 - Augest(Techinal Events)</h1>
+
+<table border="2" cellpadding="10" cellspacing="10" style="margin-left: 5px;">
+    <tr>
+        <thead >
+           <th>Date & Time</th>
+           <th>Event-Name</th>
+           <th>NO of slots</th>
+
+        </thead>
+        <tbody>
+     <tr>
+            <td>10th Augest - 9.30 am</td>
+            <td>content Creation</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.00 am</td>
+            <td>coding</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+
+        </tbody>
+    </tr>
+</table>
+<br>
+</div>
+<div class="right">
+<h1>12 -Augest(Non-Techincal Events)</h1>
+
+<table border="2" cellpadding="10" cellspacing="10" style="margin-left: 5px;">
+    <tr>
+        <thead >
+           <th>Date & Time</th>
+           <th>Event-Name</th>
+           <th>NO of slots</th>
+
+        </thead>
+        <tbody>
+     <tr>
+            <td>10th Augest - 9.30 am</td>
+            <td>content Creation</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.00 am</td>
+            <td>coding</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>10th Augest - 10.30 am</td>
+            <td>Debugging</td>
+            <td>15</td>
+        </tr>
+
+        </tbody>
+    </tr>
+</table>
+</div>
+</div>
+
+{% endblock %}

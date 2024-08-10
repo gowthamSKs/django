@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Table of registered-form</h1>
+<style>
+    th,td{
+        border: 1px solid black;
+    }
+    h1{
+        background-color: red;
+        margin-top: 0.25%;
+        text-align: center;
+        color: whitesmoke;
+        }
+    table,thead,tbody{
+        margin-left: 20%;
+        width: 99%;
+    }
+    th{
+        background-color: wheat;
+    }
+    #u{
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        transition: 0.2s ease-out 0.2s;
+    }
+    #u:hover{
+        background-color: rgb(24, 24, 154);
+    }
+    #d{
+        background-color:red;
+        color: white;
+        border-radius: 10px;
+    }
+    #d:hover{
+        background-color:rgb(175, 36, 36);
+    }
+    button{
+        font-size: 18px;
+    }
+</style>
+
+<table border="2" cellpadding="10" cellspacing="10" style="margin-left: 5px;">
+    <tr>
+        <thead >
+            <th>Name</th>
+            
+            <th>Age</th>
+            <th>Dept</th>  
+            <th>Phone Number</th>
+            <th>Email_id</th> 
+            <th>Event_name</th>   
+            <th>Total_Members</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+        </thead>
+        <tbody>
+            {% for p in allproduct %}
+            <tr>
+                <td>{{p.name}}</td>
+                <td>{{p.age}}</td>
+                <td>{{p.dept}}</td>
+                <td>{{p.phone_Number}}</td>
+                <td>{{p.Email_id}}</td>
+               <td>{{p.Event_name}}</td>
+               <td>{{p.tot_members}}</td>
+               <td>
+                <a href="{% url 'tableupdate' p.id %}">
+                    <button id="u">Update</button>
+                 </a>
+                </td>
+               </td>
+               <td>
+                <a href="{% url  'tabledelete' p.id %}">
+                    <button id="d">Delete</button>
+                </a>
+               </td>
+                  
+            </tr>
+
+            {% endfor %}
+        </tbody>
+    </tr>
+</table>
+
+{% endblock %}

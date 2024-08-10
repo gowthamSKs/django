@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+h1{
+    margin-top: 0.25%;
+    background-color: red;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form{
+    border: 1px solid black;
+    width:70%;
+    margin-left: 15%;
+    padding: 10px;
+}
+input{
+    width:50%;
+}
+button{
+    margin-left: 40%;
+    font-size: 18px;
+    width: 18%;
+  
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+    transition: 0.1s ease-in 0.1s;
+}
+button:hover{
+    background-color: red;
+    color: black;
+}
+
+</style>
+<div class="con">
+<h1>Contact Us</h1>
+<div class="form">
+    <h2>Fill the Form we will Provide the details about the events</h2>
+<form>
+    Name:<input type="text" placeholder="enter your name"/>
+    <br><br>
+    Email_id:<input type="email" placeholder="Enter your mail-id"/><br><br>
+    Phone Number:<input type="number" placeholder="Enter your ph no"/><br><br>
+    <button>Submit</button>
+</form>
+</div>
+</div>
+
+{% endblock %}

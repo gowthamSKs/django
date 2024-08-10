@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Register Form</h1>
+<form action="" method="POST" style="display: block;">
+    {% csrf_token %}
+    {{val}}
+    <input type="submit" value="Submit"/>
+</form>
+<style>
+    h1{
+        background-color: red;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        margin-top: 0.25%;
+       
+    }
+form{
+    display: inline;
+    margin:0 20px;
+    border:1px solid black;
+    padding: 20px;
+}
+
+</style>
+{% endblock %}
+
+
